@@ -1,0 +1,148 @@
+<!DOCTYPE HTML><html lang="zh-hans"><head><meta charset="UTF-8"><meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>docker · 学习笔记</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="description" content=""><meta name="generator" content="GitBook 3.2.3"><meta name="author" content="王顶"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-forkmegithub-cn/plugin.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-search-plus/search.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-prism/prism.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-splitter/splitter.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-image-captions-extended/image-captions.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-bsz/bsz.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-fancybox/jquery.fancybox.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-gtalk/gtalk.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-fontsettings/website.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/styles/website.css"><meta name="HandheldFriendly" content="true"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/images/apple-touch-icon-precomposed-152.png"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/images/favicon.ico" type="image/x-icon"><link rel="next" href="../testing/jmeter.html"><link rel="prev" href="ruby.html"></head><body><div class="book"><div class="book-summary"><div id="book-search-input" role="search"><input type="text" placeholder="输入并搜索"></div><nav role="navigation"><ul class="summary"><li class="chapter" data-level="1.1" data-path="../"><a href="../">简介</a></li><li class="chapter" data-level="1.2" data-path="../stars.html"><a href="../stars.html">Stars</a></li><li class="header">Office</li><li class="chapter" data-level="2.1" data-path="../office/vim.html"><a href="../office/vim.html">vim</a></li><li class="chapter" data-level="2.2" data-path="../office/cvim.html"><a href="../office/cvim.html">cVim</a></li><li class="chapter" data-level="2.3" data-path="../office/git.html"><a href="../office/git.html">Git</a></li><li class="chapter" data-level="2.4" data-path="../office/note-gitbook.html"><a href="../office/note-gitbook.html">GitBook</a></li><li class="chapter" data-level="2.5" data-path="../office/regexp.html"><a href="../office/regexp.html">RegExp</a></li><li class="chapter" data-level="2.6" data-path="../office/tern_for_vim.html"><a href="../office/tern_for_vim.html">tern_for_vim</a></li><li class="chapter" data-level="2.7" data-path="../office/redmine.html"><a href="../office/redmine.html">Redmine</a></li><li class="chapter" data-level="2.8" data-path="../office/vmware.html"><a href="../office/vmware.html">vmware</a></li><li class="chapter" data-level="2.9" data-path="../office/win10.html"><a href="../office/win10.html">Win 10</a></li><li class="chapter" data-level="2.10" data-path="../office/latex.html"><a href="../office/latex.html">LaTex</a></li><li class="header">WEB</li><li class="chapter" data-level="3.1" data-path="../web/npm.html"><a href="../web/npm.html">NPM</a></li><li class="chapter" data-level="3.2" data-path="../web/benchmark.html"><a href="../web/benchmark.html">BenchMark</a></li><li class="chapter" data-level="3.3" data-path="../web/css.html"><a href="../web/css.html">CSS</a></li><li class="chapter" data-level="3.4" data-path="../web/grunt.html"><a href="../web/grunt.html">Grunt</a></li><li class="chapter" data-level="3.5" data-path="../web/javascript.html"><a href="../web/javascript.html">JavaScript</a></li><li class="chapter" data-level="3.6" data-path="../web/nodejs.html"><a href="../web/nodejs.html">Node.js</a></li><li class="chapter" data-level="3.7" data-path="../web/web.html"><a href="../web/web.html">WEB</a></li><li class="header">Linux</li><li class="chapter" data-level="4.1" data-path="centos.html"><a href="centos.html">CentOS</a></li><li class="chapter" data-level="4.2" data-path="aliyun.html"><a href="aliyun.html">aliyun</a></li><li class="chapter" data-level="4.3" data-path="nginx.html"><a href="nginx.html">nginx</a></li><li class="chapter" data-level="4.4" data-path="command.html"><a href="command.html">Command</a></li><li class="chapter" data-level="4.5" data-path="gitlab.html"><a href="gitlab.html">GitLab</a></li><li class="chapter" data-level="4.6" data-path="ruby.html"><a href="ruby.html">Ruby</a></li><li class="chapter active" data-level="4.7" data-path="docker.html"><a href="docker.html">docker</a></li><li class="header">Testing</li><li class="chapter" data-level="5.1" data-path="../testing/jmeter.html"><a href="../testing/jmeter.html">JMeter</a></li><li class="chapter" data-level="5.2" data-path="../testing/mocha.html"><a href="../testing/mocha.html">Mocha</a></li><li class="chapter" data-level="5.3" data-path="../testing/selenium-ide.html"><a href="../testing/selenium-ide.html">SeleniumIDE</a></li><li class="chapter" data-level="5.4" data-path="../testing/webdriver.html"><a href="../testing/webdriver.html">WebDriver</a></li><li class="header">DataBase</li><li class="chapter" data-level="6.1" data-path="../database/mariadb.html"><a href="../database/mariadb.html">MariaDB</a></li><li class="chapter" data-level="6.2" data-path="../database/mongodb.html"><a href="../database/mongodb.html">MongoDB</a></li><li class="divider"></li><li><a href="https://www.gitbook.com" target="blank" class="gitbook-link">本书使用 GitBook 发布</a></li></ul></nav></div><div class="book-body"><div class="body-inner"><div class="book-header" role="navigation"><!-- Title --><h1><i class="fa fa-circle-o-notch fa-spin"></i> <a href="..">docker</a></h1></div><div class="page-wrapper" tabindex="-1" role="main"><div class="page-inner"><div class="search-plus" id="book-search-results"><div class="search-noresults"><section class="normal markdown-section"><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon"></span><a href="#docker"><b> </b>docker</a></li><ul><li><span class="title-icon"></span><a href="#docker-安装"><b>1. </b>Docker 安装</a></li><li><span class="title-icon"></span><a href="#docker-使用"><b>2. </b>Docker 使用</a></li><li><span class="title-icon"></span><a href="#生成镜像"><b>3. </b>生成镜像</a></li><li><span class="title-icon"></span><a href="#容器管理"><b>4. </b>容器管理</a></li><li><span class="title-icon"></span><a href="#其他"><b>5. </b>其他</a></li></ul></ul></div><a href="#docker" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="docker"><a name="docker" class="anchor-navigation-ex-anchor" href="#docker"><i class="fa fa-link" aria-hidden="true"></i></a> docker</h1><h2 id="docker-安装"><a name="docker-安装" class="anchor-navigation-ex-anchor" href="#docker-安装"><i class="fa fa-link" aria-hidden="true"></i></a>1. Docker 安装</h2><p>Docker 分两个版本，docker-ce(Community Edition) 和 docker-ee(Enterprise Edition)。CE 版本是免费的、社区版。</p><p>具体安装步骤，参考 Docker 官方文档：<a href="https://docs.docker.com/engine/install/centos/" target="_blank">https://docs.docker.com/engine/install/centos/</a></p><pre class="language-"><code class="lang-bash">yum <span class="token function">install</span> -y yum-utils
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum <span class="token function">install</span> docker-ce docker-ce-cli containerd.io
+yum list docker-ce --showduplicates <span class="token operator">|</span> <span class="token function">sort</span> -r
+systemctl start docker
+systemctl status docker
+systemctl <span class="token builtin class-name">enable</span> docker
+docker version
+docker run hello-world
+</code></pre><h2 id="docker-使用"><a name="docker-使用" class="anchor-navigation-ex-anchor" href="#docker-使用"><i class="fa fa-link" aria-hidden="true"></i></a>2. Docker 使用</h2><pre class="language-"><code class="lang-bash"><span class="token comment"># 以非 root 用户身份使用 docker</span>
+<span class="token function">sudo</span> <span class="token function">usermod</span> -aG docker <span class="token environment constant">$USER</span>   <span class="token comment"># $USER 是当前登录的用户</span>
+                                <span class="token comment"># 此命令执行后，需注销，重新登录，才生效</span>
+
+<span class="token comment"># 查看 docker 帮助</span>
+docker -h
+
+<span class="token comment"># 查看本机镜像</span>
+docker images
+
+<span class="token comment"># 拉取 centos 镜像</span>
+docker pull centos
+
+<span class="token comment"># 使用阿里 docker 镜像，提高镜像拉取速度</span>
+<span class="token function">mkdir</span> -p /etc/docker
+<span class="token function">tee</span> /etc/docker/daemon.json <span class="token operator">&lt;&lt;-</span><span class="token string">&apos;EOF&apos;
+{
+  &quot;registry-mirrors&quot;: [&quot;https://v0yaxj7c.mirror.aliyuncs.com&quot;]
+}
+EOF</span>
+systemctl daemon-reload
+systemctl restart docker
+
+<span class="token comment"># 搜索镜像</span>
+docker search tomcat
+
+<span class="token comment"># 删除镜像</span>
+docker rmi ubuntu
+
+<span class="token comment"># 运行交互式容器</span>
+docker run -it --name c1 centos /bin/bash
+
+<span class="token comment"># 运行守护式容器</span>
+docker run -d --name c2 centos /bin/bash
+
+<span class="token comment"># 重启容器</span>
+docker restart c2
+
+<span class="token comment"># 停止容器</span>
+docker stop c1
+
+<span class="token comment"># 查看容器运行的日志</span>
+docker logs c1
+
+<span class="token comment"># 修改容器的名称</span>
+docker <span class="token function">rename</span> old-name new-name
+
+<span class="token comment"># 容器和宿主机之间的文件复制</span>
+<span class="token comment"># src 是源，dst 是目的地</span>
+<span class="token comment"># 容器中的内容，容器名称:文件路径或文件夹路径，例如，c2:/src/a.txt</span>
+<span class="token comment"># dst 一般是文件夹路径</span>
+docker <span class="token function">cp</span> src dst
+
+<span class="token comment"># 创建容器，但不运行</span>
+docker create centos
+
+<span class="token comment"># 查看运行的容器</span>
+docker <span class="token function">ps</span>
+
+<span class="token comment"># 目录挂载，注意容器目录必须是绝对路径</span>
+docker -d --name c2 -v 宿主机目录:容器目录 镜像名字
+
+<span class="token comment"># 删除容器，前提容器不能是运行状态</span>
+docker <span class="token function">rm</span> c2
+docker <span class="token function">rm</span> <span class="token variable"><span class="token variable">`</span>docker <span class="token function">ps</span> -a -q<span class="token variable">`</span></span>       <span class="token comment"># 模板字符串的引号里面可以是其他命令</span>
+
+<span class="token comment"># 删除镜像</span>
+docker rmi centos
+
+<span class="token comment"># 在容器中执行命令</span>
+docker <span class="token builtin class-name">exec</span> -it c1 /bin/bash
+docker <span class="token builtin class-name">exec</span> -it c2 /bin/bash
+
+<span class="token comment"># 检查容器详细信息</span>
+docker inspect c2
+
+<span class="token comment"># 检查容器元数据，检查容器是否运行</span>
+docker inspect --format <span class="token string">&quot;{{.State.Running}}&quot;</span> c1
+docker inspect -f <span class="token string">&quot;{{.State.Running}}&quot;</span> c1
+
+<span class="token comment"># 常用参数</span>
+--link 容器名字：别名     链接到某个容器，解决主机名到 IP 地址映射的问题
+                          链接时静态的，不传递的
+                          链接目标的容器必须先启动
+                          新容器中会创建环境变量来保存目标容器的名称和 IP Addr
+
+--rm                      运行完镜像就删除镜像
+-e 环境变量<span class="token operator">=</span>值            设置容器的环境变量
+-e <span class="token operator">=</span> --env
+--pid <span class="token function">host</span>                没有 PID 隔离的容器（一般不这样做）
+--cidfile 容器名称文件    把容器的 ID，保存到容器名称文件中，应该给出绝对路径
+docker <span class="token function">ps</span> -l -q           返回最后创建容器的截断的 ID
+-l <span class="token operator">=</span> --latest
+-q <span class="token operator">=</span> --quiet
+docker <span class="token function">ps</span> --no-trunc      返回
+-f <span class="token operator">=</span> --format
+-v <span class="token operator">=</span> --volume
+-p 宿主端口:容器端口      把容器端口映射到主机端口
+-p <span class="token operator">&lt;</span>container port<span class="token operator">&gt;</span>
+-p <span class="token operator">&lt;</span>hostport<span class="token operator">&gt;</span>:<span class="token operator">&lt;</span>container port<span class="token operator">&gt;</span>
+-p <span class="token operator">&lt;</span>hostip<span class="token operator">&gt;</span>:<span class="token operator">&lt;</span>hostport<span class="token operator">&gt;</span>:<span class="token operator">&lt;</span>container port<span class="token operator">&gt;</span>
+--read-only               只读文件系统
+</code></pre><h2 id="生成镜像"><a name="生成镜像" class="anchor-navigation-ex-anchor" href="#生成镜像"><i class="fa fa-link" aria-hidden="true"></i></a>3. 生成镜像</h2><pre class="language-"><code class="lang-bash"><span class="token comment"># 构建镜像</span>
+docker build -t 镜像的名字 --rm<span class="token operator">=</span>true <span class="token builtin class-name">.</span>
+<span class="token comment"># --rm=true 删除中间镜像</span>
+<span class="token comment"># . 表示用当前目录的 Dockerfile 来创建镜像</span>
+
+<span class="token comment"># Dockerile 基于 DSL（Domain Specific Language） 语法</span>
+
+<span class="token comment"># 设置镜像 tag</span>
+docker tag
+
+<span class="token comment"># 登录镜像仓库网站</span>
+docker login
+
+<span class="token comment"># 推送镜像</span>
+docker push
+</code></pre><h2 id="容器管理"><a name="容器管理" class="anchor-navigation-ex-anchor" href="#容器管理"><i class="fa fa-link" aria-hidden="true"></i></a>4. 容器管理</h2><h2 id="其他"><a name="其他" class="anchor-navigation-ex-anchor" href="#其他"><i class="fa fa-link" aria-hidden="true"></i></a>5. 其他</h2><pre class="language-"><code class="lang-bash"><span class="token comment"># 搭建私有镜像仓库</span>
+docker run -d -p <span class="token number">5000</span>:5000 --restart<span class="token operator">=</span>always --name registry <span class="token punctuation">\</span>
+-v /home/wangding:/var/lib/registry registry:latest
+
+docker tag hello-world:latest localhost:5000/hello-world:1.0.0
+
+docker push localhost:5000/hello-world:1.0.0
+
+<span class="token comment"># 防火墙打开 5000 端口</span>
+firewall-cmd --permanent --add-port<span class="token operator">=</span><span class="token number">5000</span>/tcp
+firewall-cmd --reload
+firewall-cmd --zone<span class="token operator">=</span>public --list-ports
+
+<span class="token comment"># 通过浏览器查看仓库信息</span>
+http://192.168.133.144:5000/v2/hello-world/tags/list
+
+<span class="token comment"># 通过磁盘文件查看仓库信息</span>
+<span class="token function">ls</span> /home/wangding/docker
+</code></pre><p></p><footer class="page-footer"><span class="page-footer-copyright">2017 - <span class="bsz-this-year"></span> by <a href="https://i.wangding.co" target="_blank">王顶</a>. All rights reserved.</span><span class="page-footer-footer-update"><span id="busuanzi_container_site_uv">本站访客人数 <span id="busuanzi_value_site_uv"></span> 人次</span></span></footer><script>document.getElementsByClassName("bsz-this-year")[0].innerHTML = new Date().getFullYear();</script><script async src="//cdn.jsdelivr.net/gh/sukkaw/busuanzi@2.3/bsz.pure.mini.js"></script><p></p><p></p><div id="gitalk-container"></div><script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script><script>window.onload = function() {gitbook.events.on("page.change", function() {var gitalk = new Gitalk({"clientID":"5f2010891d3a1e43daad","clientSecret":"0f1589253938ab880568105760d6cdbd07da96a6","repo":"note","owner":"wangding","admin":["wangding"],"labels":["note"],"id":"/linux/docker.html"});gitalk.render("gitalk-container");});};var gitalk = new Gitalk({"clientID":"5f2010891d3a1e43daad","clientSecret":"0f1589253938ab880568105760d6cdbd07da96a6","repo":"note","owner":"wangding","admin":["wangding"],"labels":["note"],"id":"/linux/docker.html"});gitalk.render("gitalk-container");</script><p></p></section></div><div class="search-results"><div class="has-results"><h1 class="search-results-title"><span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1><ul class="search-results-list"></ul></div><div class="no-results"><h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1></div></div></div></div></div></div><a href="ruby.html" class="navigation navigation-prev" aria-label="Previous page: Ruby"><i class="fa fa-angle-left"></i> </a><a href="../testing/jmeter.html" class="navigation navigation-next" aria-label="Next page: JMeter"><i class="fa fa-angle-right"></i></a></div><script>var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"docker","level":"4.7","depth":1,"next":{"title":"JMeter","level":"5.1","depth":1,"path":"testing/jmeter.md","ref":"./testing/jmeter.md","articles":[]},"previous":{"title":"Ruby","level":"4.6","depth":1,"path":"linux/ruby.md","ref":"./linux/ruby.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-sharing","edit-link","forkmegithub-cn","search-plus","sharing-plus","anchor-navigation-ex","copy-code-button","prism","splitter","image-captions-extended","bsz","fancybox","image-wrapper","gtalk"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"image-wrapper":{},"prism":{},"fancybox":{"helpers":{"buttons":{}}},"splitter":{},"image-captions-extended":{},"bsz":{"copyright":"2017&nbsp;-&nbsp;<span class=\"bsz-this-year\"></span>&nbsp;by&nbsp;<a href=\"https://i.wangding.co\">王顶</a>.&nbsp;All rights reserved."},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"sans","size":2},"gtalk":{"clientID":"5f2010891d3a1e43daad","clientSecret":"0f1589253938ab880568105760d6cdbd07da96a6","repo":"note","owner":"wangding","admin":["wangding"],"labels":["note"]},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"forkmegithub-cn":{"color":"red","url":"https://github.com/wangding/note"},"sharing":{"qq":true,"all":["weibo","douban","qzone","qq"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"编辑本页","base":"https://github.com/wangding/note/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{},"image-captions":{"caption":"图：_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"王顶","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"./office/git.html#fig2.3.1","level":"2.3","list_caption":"Figure: Git 基本概念","alt":"Git 基本概念","nro":1,"url":"http://www.ruanyifeng.com/blogimg/asset/2015/bg2015120901.png","index":1,"caption_template":"图：_CAPTION_","label":"Git 基本概念","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"./office/git.html#fig2.3.2","level":"2.3","list_caption":"Figure: issue filter.png","alt":"issue filter.png","nro":2,"url":"http://upload-images.jianshu.io/upload_images/3058932-fbc953aaadb6cdf0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240","index":2,"caption_template":"图：_CAPTION_","label":"issue filter.png","attributes":{},"skip":false,"key":"2.3.2"}]},"title":"学习笔记","language":"zh-hans","gitbook":"*","description":"学习笔记及各种参考资料链接"},"file":{"path":"linux/docker.md","mtime":"2020-11-24T10:04:28.852Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-24T10:05:53.997Z"},"basePath":"..","book":{"language":""}});
+        });</script></div><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/theme.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-edit-link/plugin.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-forkmegithub-cn/plugin.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-search-plus/search.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-sharing-plus/buttons.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-splitter/splitter.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-fancybox/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-fancybox/plugin.js"></script><script src="https://cdn.jsdelivr.net/gh/wangding/note@gh-pages/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script></body></html>
